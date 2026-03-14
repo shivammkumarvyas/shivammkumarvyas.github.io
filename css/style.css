@@ -6,6 +6,10 @@ body {
     text-align: center;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     background-color: #1f1f1f;
     padding: 15px;
@@ -13,6 +17,9 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -38,6 +45,15 @@ nav a.logo img {
     padding: 40px;
 }
 
+#home {
+    padding: 120px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .main-image {
     width: 60%;
     max-width: 600px;
@@ -46,8 +62,11 @@ nav a.logo img {
     margin: 25px 0;
 }
 
-.portfolio-section {
-    margin-top: 40px;
+#portfolio {
+    padding: 100px 20px; 
+    min-height: 80vh;
+    background-color: #1e1e1e;
+    border-top: 2px solid #333;
 }
 
 .project-button {
